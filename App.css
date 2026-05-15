@@ -1,0 +1,79 @@
+/* Navbar */
+.MuiPaper-root.MuiAppBar-root {
+  background-color: #247ad0;
+  /*background-color: #5d5c5c;*/
+}
+/* Navbar text */
+.MuiAppBar-root .MuiToolbar-root .MuiTypography-root {
+  color: white !important;
+  font-weight: bold;
+}
+/* Navbar toggle */
+.MuiAppBar-root .MuiSvgIcon-root {
+  color: #fff !important;
+}
+
+/* Sidebar */
+/* Customize Drawer paper */
+.MuiDrawer-paper {
+  background-color: #2c3e50 !important;
+  color: white !important;
+}
+/* ListItem icon and selected state */
+.MuiListItemButton-root .MuiSvgIcon-root {
+  color: white !important;
+}
+.MuiListItemButton-root.Mui-selected .MuiTypography-root {
+  color: white !important;
+}
+.MuiListItemButton-root.Mui-selected .MuiSvgIcon-root {
+  color: #66c9fa !important;
+}
+/* Typography inside ListItemText only */
+.MuiTypography-root.MuiTypography-body1.MuiListItemText-primary {
+  font-size: 13px !important;
+}
+/* Icon alignment in the Drawer menu */
+.MuiDrawer-root .MuiListItemIcon-root {
+  margin-right: 0 !important;
+}
+/* Padding for ListItemButton in the Drawer menu */
+.MuiDrawer-root
+  .MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters {
+  padding: 0px 3px !important;
+}
+/* Collapsed menu */
+body:has(button[aria-label="Expand navigation menu"])
+  .MuiDrawer-root.MuiDrawer-docked[class*="MuiDrawer-docked"],
+body:has(button[aria-label="Expand navigation menu"])
+  .MuiDrawer-root.MuiDrawer-docked[class*="MuiDrawer-docked"]
+  .MuiDrawer-paper {
+  width: 44px !important;
+  overflow-x: hidden;
+}
+/* Expanded menu (should come after the collapsed rule) */
+body:has(button[aria-label="Collapse navigation menu"])
+  .MuiDrawer-root.MuiDrawer-docked[class*="MuiDrawer-docked"],
+body:has(button[aria-label="Collapse navigation menu"])
+  .MuiDrawer-root.MuiDrawer-docked[class*="MuiDrawer-docked"]
+  .MuiDrawer-paper {
+  width: 240px !important;
+  overflow-x: visible;
+}
+
+:root,
+[data-toolpad-color-scheme="light"] {
+  --mui-palette-text-primary: black !important;
+  --mui-palette-action-hover: rgb(103 133 161 / 30%) !important;
+  --mui-palette-primary-mainChannel: 128 221 250 !important;
+}
+
+.form-actions .btn.reset,
+.form-actions .btn.add {
+  box-shadow: var(--mui-shadows-2);
+}
+
+nav .MuiListSubheader-root {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
